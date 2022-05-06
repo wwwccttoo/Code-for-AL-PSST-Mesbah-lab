@@ -2,7 +2,7 @@
 %% Initial setup
 clc;
 clear all;
-%{
+
 currendir  = pwd;
 if isempty(strfind(currendir, '/'))     
     filesep = '\';
@@ -29,7 +29,7 @@ addpath(genpath(strcat(main_dir,filesep,'gpml',filesep,'lik')));
 addpath(genpath(strcat(main_dir,filesep,'gpml',filesep,'mean')));
 addpath(genpath(strcat(main_dir,filesep,'gpml',filesep,'prior')));
 addpath(genpath(strcat(main_dir,filesep,'gpml',filesep,'util')));
-%}
+
 %% Experimantal setup
 rho=.1;
 M=500;
